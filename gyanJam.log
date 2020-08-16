@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.13)  16 AUG 2020 02:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.13)  16 AUG 2020 14:55
 entering extended mode
 **./gyanJam.tex
 (gyanJam.tex
@@ -45,21 +45,21 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
+("D:\Program Files\MiKTeX 2.9\tex/latex/titling\titling.sty"
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip49
+\thanksmargin=\skip50
+\droptitle=\skip51
+)
 ("D:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen137
 \ar@mcellbox=\box45
 \extrarowheight=\dimen138
 \NC@list=\toks15
-\extratabsurround=\skip49
-\backup@length=\skip50
+\extratabsurround=\skip52
+\backup@length=\skip53
 \ar@cellbox=\box46
-)
-("D:\Program Files\MiKTeX 2.9\tex/latex/titling\titling.sty"
-Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip51
-\thanksmargin=\skip52
-\droptitle=\skip53
 )
 ("D:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -327,31 +327,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 30.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+
+Overfull \hbox (54.70718pt too wide) in paragraph at lines 30--46
+ [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 [1
 
 {C:/Users/Shuaib/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/logo
 .png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
  (gyanJam.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `gyanJam.out' has not changed.
 (rerunfilecheck)             Checksum: AD65E88698B52DA11FD8DE62FA59F941;51.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
  5800 strings out of 481527
  88982 string characters out of 2922488
- 352063 words of memory out of 3000000
+ 356063 words of memory out of 3000000
  20966 multiletter control sequences out of 15000+200000
  536279 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,5n,29p,209b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,8n,29p,209b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on gyanJam.pdf (1 page, 49655 bytes).
+Output written on gyanJam.pdf (1 page, 65781 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
