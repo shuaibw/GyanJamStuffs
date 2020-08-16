@@ -2,10 +2,14 @@
 \usepackage{graphicx}
 \usepackage{titling}
 \usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \setcounter{secnumdepth}{0}
 \usepackage{geometry}
 \geometry{
 	top=2cm,
+	left=2cm,
+	right=2cm
 }
 \usepackage{hyperref}
 \hypersetup{
@@ -13,6 +17,11 @@
 	urlcolor=blue,
 }
 \urlstyle{same}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
 
 \preauthor{%
   \begin{center}
@@ -27,21 +36,21 @@
 \maketitle
 \section{Course Syllabus}
 \begin{center}
-\begin{tabular}{|m{1.15cm}|m{15cm}|}
+\begin{tabular}{|M{1.2cm}|M{4cm}|M{12cm}|}
 \hline
-Days &Topics\\ \hline
-Day 0 & Machine Learning, Classifications of ML problems (Supervised, Reinforcement and Unsupervised) with examples\\ \hline
-Day 1 & Tools for ML (Python, Conda, JupyterLab, Matlab), Python libraries for ML(SciPy, NumPy, Matplotlib, Pandas), Data visualization\\ \hline
-Day 2 & Linear Algebra for ML, Cost function, Model and hypotheses representation, Gradient Descent, Linear regression\\ \hline
-Day 3 & Classification and decision boundary, Logistic regression, Multiclass classification, Bias and Variance, Regularization\\ \hline
-Day 4 & Deep Learning and Neural Networks, Convolutional NN, Recurrent NN, Multiclass classification with NN\\ \hline
-Day 5 & Learning curves, Training/Test/Cross Validation sets, Error Metrics (Precision, Recall, F1 Score), Confusion matrix, K-fold improvement\\ \hline
-Day 6 & Large Margin classifiers, Kernels, Support Vector Machines, Decision Trees\\ \hline
-Day 7 & Linear Discriminant Analysis, K-Nearest Neighbors\\ \hline
-Day 8 & Unsupervised learning algorithms, K-means clustering, Dimensionality reductions and Principal Component Analysis\\ \hline
-Day 9 & Gaussian Distribution, Multi-variate Gaussian Distribution, Anomaly Detection, Recommender Systems\\ \hline
-Day 10 & Online learning, Batch Gradient Descent, Map-reduce and Data parallelism, Multi-core workload distribution\\ \hline
-Day 11 & Applications of Machine Learning, Advice for applying Machine Learning, Project ideas and future plans\\ \hline
+Days & What You Will Learn&Topics\\ \hline
+Day 0 &Getting started &Machine Learning, Classifications of ML problems (Supervised, Reinforcement and Unsupervised) with examples\\ \hline
+Day 1 & Tools for Machine Learning &Python, Conda, JupyterLab, Python libraries for ML(SciPy, NumPy, Matplotlib, Pandas), Data visualization, Linear Algebra for ML\\ \hline
+Day 2 & Linear regression &Cost function, Model and hypotheses representation, Gradient Descent, Feature scaling and Mean normalization\\ \hline
+Day 3 & Logistic regression &Classification and decision boundary, Sigmoid function, Multiclass classification, Bias and Variance, Regularization\\ \hline
+Day 4 &[ Title? ] &Linear Discriminant Analysis, K-Nearest Neighbors, Decision Trees\\ \hline
+Day 5 & Performance measurement &Learning curves, Training/Test/Cross Validation sets, Error Metrics (Precision, Recall, F1 Score), Confusion matrix, K-fold improvement\\ \hline
+Day 6 &Support Vector Machines&Large Margin classifiers, Kernels (Gaussian and Linear), SVM software packages\\ \hline
+Day 7 & Unsupervised Learning Algorithms & K-means clustering, Dimensionality reduction and Principal Component Analysis\\ \hline
+Day 8 & Anomaly Detection& Density estimation, Gaussian distribution, Multivariate Gaussian distribution\\ \hline
+Day 9 &Recommender systems & Content-based recommendations, Collaborative filtering, Predicting content ratings\\ \hline
+Day 10 & Hands on project & [Insert Ideas Here]\\ \hline
+Day 11 & What to do next? &Advice for applying Machine Learning, Deep Learning and Neural Networks, Project ideas and future plans\\ \hline
 \end{tabular}
 \end{center}
 \end{document}
