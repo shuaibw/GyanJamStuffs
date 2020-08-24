@@ -6,6 +6,7 @@
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \setcounter{secnumdepth}{0}
 \usepackage{caption}
+\usepackage{subfig}
 \usepackage{geometry}
 \geometry{
 	top=2cm,
@@ -134,12 +135,75 @@ More supervised learning algorithms will give you a brief overview of Linear Dis
 \item \href{https://www.youtube.com/watch?v=7VeUPuFGJHk}{Decision Trees}
 \end{itemize}
 \section{Day 5}
-Measuring the performance of a learning algorithm is undoubtedly the most crucial part of a Machine Learning project. Using Matplotlib, learning curves can be plotted and be checked against overfitting/underfitting problems. Regularization can be addressed to tackle these issues. Exploiting the benefits of real-valued performance measurement and error metrics such as: Precision, Recall and F1 Score, we can further extract out the best result of our Machine Learning project by choosing the best algorithm.
+Measuring the performance of a learning algorithm is undoubtedly the most crucial part of a Machine Learning project. Using Matplotlib, learning curves can be plotted and be checked against overfitting or underfitting problems. Regularization can be addressed to tackle these issues. Exploiting the benefits of real-valued performance measurement and error metrics such as: Precision, Recall and F1 Score, we can further extract out the best result of our Machine Learning project by choosing the best parameters and learning algorithm.
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=.8]{img/lc.png}
+{\caption*{Learning Curve}}
 \end{center}
-\end{figure}
+\end{figure}\\
+Useful links and materials:
+\begin{itemize}
+\item \href{https://www.youtube.com/watch?v=ISBGFY-gBug}{Learning Curves}
+\item \href{https://www.youtube.com/watch?v=wGw6R8AbcuI}{Error Metrics}
+\item \href{https://www.youtube.com/watch?v=W5meQnGACGo}{F1 Score}
+\end{itemize}
+\pagebreak
+\section{Day 6}
+Just using a logistic regression classifier to plot decision boundaries often fails to keep a large margin between the different classes, and this is where Large Margin Classifiers come into play. Support Vector Machines is undoubtedly one of the most widely used algorithm to address this issue. Using a suitable Kernel, a margin between different classes can be maintained in order to further improve the performance of your learning algorithms, and the best part is that you don't even have to implement any of these SVM algorithms by yourself. All these algorithms are neatly packed in your python libraries which you can apply using just a few lines of code!
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.45]{img/svm.png}
+{\caption*{Support Vector Machine}}
+\end{center}
+\end{figure}\\
+Useful links and materials:
+\begin{itemize}
+\item \href{https://www.youtube.com/watch?v=Ccje1EzrXBU}{Large Margin Intuition}
+\item \href{https://www.youtube.com/watch?v=efR1C6CvhmE}{SVM explained}
+\item \href{https://www.youtube.com/watch?v=mTyT-oHoivA}{Kernels}
+\item \href{https://www.youtube.com/watch?v=7sz4WpkUIIs}{SVM with Python} [Warning: Long Video]
+\end{itemize}
+\pagebreak
+\section{Day 7}
+Unsupervised Learning Algorithms are used to find patterns/structures in a given dataset. The term `Unsupervised' is used because we don't have to use any labeled training examples as we had to in Supervised Algorithms. You will be able to analyze clusters in datasets by successfully implementing the very popular K-Means Clustering algorithm. You will also learn to compress an image from 24-bit to 16-bit representation by using the Principal Component Analysis algorithm, which will also help you with data compression.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.6]{img/icKmC.png}
+\end{center}
+{\caption*{Image compression}}
+    \centering
+    \subfloat[Visualizing Dataset]{{\includegraphics[scale=0.5]{img/pca1.png} }}%
+    \qquad
+    \subfloat[Reduced Dimension]{{\includegraphics[scale=0.5]{img/pca2.png} }}%
+    \caption{Principal Component Analysis}%
+    \label{fig:example}%
+\end{figure}\\
+Useful links and materials:
+\begin{itemize}
+\item \href{https://www.youtube.com/watch?v=hDmNF9JG3lo}{K-Means Clustering}
+\item \href{https://www.youtube.com/watch?v=T-B8muDvzu0}{Principal Component Analysis-1}
+\item \href{https://www.youtube.com/watch?v=rng04VJxUt4}{Principal Component Analysis-2}
+\end{itemize}
+\pagebreak
+\section{Day 8}
+You will learn how to detect anomalies in your system and this type of unsupervised learning is used in fraud detection, manufacturing aircraft engines, monitoring machines in data center and so on. Carefully chosen features will help your algorithms ouput the best prediction and using Gaussian Distribution, you can implement the Anomaly Detection algorithm by yourself.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.8]{img/ad.png}
+{\caption*{Anomaly Detection}}
+\centering
+\includegraphics[scale=.6]{img/gnb.png}
+{\caption*{Gaussian Naive Bayes}}
+\end{figure}\\
+Useful links and materials:
+\begin{itemize}
+\item \href{https://www.youtube.com/watch?v=mh6rAYA0e7Q}{Gaussian Distribution}
+\item \href{https://www.youtube.com/watch?v=g2YBWQnqOpw}{Anomaly Detection algorithm}
+\end{itemize}
+\pagebreak
+\section{Day 9}
+Ever wondered how on earth online e-commerce services like Daraz, Amazon, Foodpanda are able accurately predict your necessities? Whenever you purchase a product from an e-commerce service, their `Under the hood' Recommender Systems track your purchases. The next time you think about buying your commodities, that system can easily predict what types of product you are most likely to buy, using your previous purchase history.
 \end{document}
 
 
