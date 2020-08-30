@@ -380,32 +380,138 @@ the components.
 PCA (Principal Components Analysis), KPCA ( Kernel-based Principal Component Analysis)
 and ICA ( Independent Component Analysis) are important feature extraction techniques used
 for dimensionality reduction.
-
-
 \end{enumerate}
-%\pagebreak
-%
-%\section{Day 8}
-%\begin{enumerate}
-%
-%\end{enumerate}
-%\pagebreak
-%
-%\section{Day 9}
-%\begin{enumerate}
-%
-%\end{enumerate}
-%\pagebreak
-%
-%\section{Day 10}
-%\begin{enumerate}
-%
-%\end{enumerate}
-%\pagebreak
-%
-%\section{Day 11}
-%\begin{enumerate}
-%
-%\end{enumerate}
+\pagebreak
+
+\section{Day 8}
+\begin{enumerate}
+\item How do you handle outliers in the data?\\[.5em]
+Outlier is an observation in the data set that is far away from other observations in the data set.
+We can discover outliers using tools and functions like box plot, scatter plot, Z-Score, IQR score
+etc. and then handle them based on the visualization we have got. To handle outliers, we can
+cap at some threshold, use transformations to reduce skewness of the data and remove outliers
+if they are anomalies or errors.
+
+\item Mention some of the EDA Techniques?\\[.5em]
+Exploratory Data Analysis (EDA) helps analysts to understand the data better and forms the
+foundation of better models.\\
+\textbf{Visualization:-}
+\begin{itemize}
+\item Univariate visualization
+\item Bivariate visualization
+\item Multivariate visualization
+\end{itemize}
+\textbf{Missing Value Treatment} — Replace missing values with Either Mean/Median\\
+\textbf{Outlier Detection} — Use Boxplot to identify the distribution of Outliers, then Apply IQR to set the
+boundary for IQR
+
+\item What are 3 data preprocessing techniques to handle outliers?
+\begin{itemize}
+\item Winsorize (cap at threshold).
+\item Transform to reduce skew (using Box-Cox or similar).
+\item Remove outliers if you're certain they are anomalies or measurement errors.
+\end{itemize}
+
+\item Generate a normal distribution array of size 2x3.\\[.5em]
+\begin{python}
+from numpy import random
+
+x = random.normal(size=(2, 3))
+\end{python}
+
+\item Write down the code needed to visualize a Gaussian distribution.\\[.5em]
+\begin{python}
+from numpy import random
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.distplot(random.normal(size=1000), hist=False)
+
+plt.show()
+\end{python}
+\end{enumerate}
+\pagebreak
+
+\section{Day 9}
+\begin{enumerate}
+\item What Is a Recommendation System?\\[.5em]
+Anyone who has used Spotify or shopped at Amazon will recognize a recommendation system:
+It's an information filtering system that predicts what a user might want to hear or see based on
+choice patterns provided by the user.
+
+\item How would you implement a recommendation system for our company’s
+users?\\[.5em]
+A lot of machine learning interview questions of this type will involve the implementation of
+machine learning models to a company’s problems. You'll have to research the company and its
+industry in-depth, especially the revenue drivers the company has, and the types of users the
+company takes on in the context of the industry it’s in.
+
+\item Name and define techniques used to find similarities in the recommendation system.\\[.5em]
+Pearson correlation and Cosine correlation are techniques used to find similarities in
+recommendation systems.
+
+\item What is Collaborative Filtering?\\[.5em]
+Collaborative filtering is a technique that can filter out items that a user might like on the basis of reactions by similar users. It works by searching a large group of people and finding a smaller set of users with tastes similar to a particular user.
+
+\item What are the steps involved in building a simple recommender system?\\[.5em]
+The following are the steps involved:
+\begin{itemize}
+\item	 Decide on the metric or score to rate movies on.
+
+\item Calculate the score for every movie.
+
+\item Sort the movies based on the score and output the top results.
+\end{itemize}
+\end{enumerate}
+\pagebreak
+
+\section{Day 10}
+Applied Machine Learning Project--\hspace{9cm}\textbf{20 Marks}\\
+\vspace{5cm}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.3]{img/mlproj.jpeg}
+\end{figure}
+\pagebreak
+
+\section{Day 11}
+\begin{enumerate}
+\item How Can You Choose a Classifier Based on a Training Set Data Size?\\[.5em]
+When the training set is small, a model that has a right bias and low variance seems to work
+better because they are less likely to overfit.
+
+\item How Do You Handle Missing or Corrupted Data in a Dataset?\\[.5em]
+One of the easiest ways to handle missing or corrupted data is to drop those rows or columns or
+replace them entirely with some other value.
+There are two useful methods in Pandas:
+\begin{itemize}
+\item IsNull() and dropna() will help to find the columns/rows with missing data and drop them
+\item Fillna() will replace the wrong values with a placeholder value
+\end{itemize}
+
+\item What is deep learning, and how does it contrast with other machine learning
+algorithms?\\[.5em]
+Deep learning is a subset of machine learning that is concerned with neural networks: how to
+use backpropagation and certain principles from neuroscience to more accurately model large
+sets of unlabelled or semi-structured data. In that sense, deep learning represents an unsupervised learning algorithm that learns representations of data through the use of neural
+nets.
+
+\item When should you use classification over regression?\\[.5em]
+Classification produces discrete values and dataset to strict categories, while regression gives
+you continuous results that allow you to better distinguish differences between individual points.
+You would use classification over regression if you wanted your results to reflect the
+belongingness of data points in your dataset to certain explicit categories (ex: If you wanted to
+know whether a name was male or female rather than just how correlated they were with male
+and female names.)
+
+\item Difference between machine learning and deep learning\\[.5em]
+Machine learning is a branch of computer science and a method to implement artificial
+intelligence. This technique provides the ability to automatically learn and improve from
+experiences without being explicitly programmed.
+
+Deep learning can be said as a subset of machine learning. It is mainly based on the artificial
+neural network where data is taken as an input and the technique makes intuitive decisions
+using the artificial neural network.
+\end{enumerate}
 
 \end{document}
